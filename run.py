@@ -546,7 +546,7 @@ def make_inspection_document(client_name, client_location, unit_number, client_c
     authors['Date'] = authors['Date'].dt.strftime('%d-%m-%Y')
     authors.drop('Unnamed: 0', inplace=True, axis=1)
     add_table_to_document(authors, doc, 'Medium Shading 1 Accent 6')
-
+    doc.add_page_break()
 
     add_header(doc, equipment_name, tag_number, unit_number, report_number, client_name, client_code, client_location, inspection_type)
 
