@@ -35,7 +35,7 @@ st.header(':blue[Info]', divider='violet')
 #i
 # client
 st.subheader(':grey[Client]')#, divider='grey')
-c1,c2 = st.columns([4,1])   
+c1,c2 = st.columns([3,2])   
 data['Client'] = data['Client'].str.upper()
 clients = data['Client'].unique().tolist()
 clients.sort()
@@ -44,7 +44,7 @@ client_name = c1.selectbox('Client name:',clients)
 clientcode = data[data['Client']==client_name]['Code'].reset_index()
 clientcode = clientcode['Code'][0]
 client_code = c2.text_input('Client code:',clientcode)
-c3,c4 = st.columns([4,1])
+c3,c4 = st.columns([3,2])
 clientlocation = data[data['Client']==client_name]['Location'].unique().tolist()
 clientlocation.sort()
 clientlocation = tuple(clientlocation)
