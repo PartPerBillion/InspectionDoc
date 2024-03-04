@@ -151,11 +151,11 @@ def add_inspection_details_to_doc(text_file,doc,heading_number):
                 doc.add_heading(f'{heading_number}. {v}'.upper(),2)
                 # line_space(doc,1)
             elif k[-1] == 't':
-                table = pd.read_csv(rf'Files\Inspection\TOWER INSPECTION BY ROBOTIC CRAWLER\{v}.csv')
+                table = pd.read_csv(rf'Files/Inspection/TOWER INSPECTION BY ROBOTIC CRAWLER/{v}.csv')
                 add_table_to_document(table, doc)
                 line_space(doc,1)
             elif k[-1] == 'j':
-                doc.add_picture(rf'Files\Inspection\TOWER INSPECTION BY ROBOTIC CRAWLER\{v}.jpg')
+                doc.add_picture(rf'Files/Inspection/TOWER INSPECTION BY ROBOTIC CRAWLER/{v}.jpg')
                 last_paragraph = doc.paragraphs[-1] 
                 last_paragraph.alignment = docx.enum.text.WD_ALIGN_PARAGRAPH.CENTER
                 line_space(doc,1)
@@ -533,15 +533,15 @@ def make_inspection_document(client_name, client_location, unit_number, client_c
     line_space(doc,4)
     if bool(fpage_image)==True:
         image = Image.open(fpage_image)
-        image.save(rf'Files\Temp\img.png')
-        doc.add_picture(rf'Files\Temp\img.png', height = Inches(3.5))
+        image.save(rf'Files/Temp/img.png')
+        doc.add_picture(rf'Files/Temp/img.png', height = Inches(3.5))
     else:
-        doc.add_picture(rf'Files\Inspection\{inspection_type}\FrontPageImage.jpg', height = Inches(3.5))
+        doc.add_picture(rf'Files/Inspection/{inspection_type}/FrontPageImage.jpg', height = Inches(3.5))
     last_paragraph = doc.paragraphs[-1] 
     last_paragraph.alignment = docx.enum.text.WD_ALIGN_PARAGRAPH.CENTER
     line_space(doc,4)
-    edited_df.to_csv(rf'Files\Temp\authors.csv')
-    authors = pd.read_csv(rf'Files\Temp\authors.csv')
+    edited_df.to_csv(rf'Files/Temp/authors.csv')
+    authors = pd.read_csv(rf'Files/Temp/authors.csv')
     authors['Date'] = pd.to_datetime(authors['Date'])
     authors['Date'] = authors['Date'].dt.strftime('%d-%m-%Y')
     authors.drop('Unnamed: 0', inplace=True, axis=1)
@@ -584,9 +584,9 @@ def make_inspection_document(client_name, client_location, unit_number, client_c
         doc.add_heading(f'{heading_number}. Tower Drawings'.upper(),1).bold = True
         for pic in tower_drawing:
             image = Image.open(pic)
-            image.save(rf'Files\Temp\img.png')
+            image.save(rf'Files/Temp/img.png')
             line_space(doc,2)
-            doc.add_picture(rf'Files\Temp\img.png', height = Inches(5))
+            doc.add_picture(rf'Files/Temp/img.png', height = Inches(5))
             last_paragraph = doc.paragraphs[-1] 
             last_paragraph.alignment = docx.enum.text.WD_ALIGN_PARAGRAPH.CENTER
             line_space(doc,1)
@@ -600,8 +600,8 @@ def make_inspection_document(client_name, client_location, unit_number, client_c
         r = p.add_run()
         for pic in shell_plate_pics:
             image = Image.open(pic)
-            image.save(rf'Files\Temp\img.png')
-            r.add_picture(rf'Files\Temp\img.png', width = Inches(2.2))
+            image.save(rf'Files/Temp/img.png')
+            r.add_picture(rf'Files/Temp/img.png', width = Inches(2.2))
             r.add_text(' ')
         p.alignment = docx.enum.text.WD_ALIGN_PARAGRAPH.CENTER
         line_space(doc,1)
@@ -637,6 +637,6 @@ def make_inspection_document(client_name, client_location, unit_number, client_c
     #                 # line_space(doc,1)
     #             doc.add_page_break()
 
-    add_inspection_details_to_doc(rf'Files\Inspection\{inspection_type}\text.txt',doc,heading_number)
+    add_inspection_details_to_doc(rf'Files/Inspection/{inspection_type}/text.txt',doc,heading_number)
 
     return doc
