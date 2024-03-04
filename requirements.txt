@@ -2,3 +2,4 @@ python-docx == 0.8.11
 docxtpl == 0.16.7
 st-gsheets-connection == 0.0.3
 docx2pdf == 0.1.8
+PyPDF2 == 3.0.1
