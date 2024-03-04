@@ -1,0 +1,40 @@
+# Tower and Scorpion instrument details
+^ TOWER & SCORPION INSTRUMENT DETAILS
+# Purpose
+> The purpose of the inspection was to determine the integrity of the tower shell course by Scorpion-2 B-Scan as per API 653 and to monitor the general condition of the Final Absorption Tower (Tower No.402) of SAP-1 Unit against the general degradation due to the service conditions. 
+# Scope
+> Scorpion-2, B-Scan crawler inspection to be carried out the following:
+^ SCOPE
+> Note: Inspection carried out from North in clockwise direction.
+# Personal Qualification and certification
+^ PERSONAL QUALIFICATION AND CERTIFICATION
+# Equipments used
+- Scorpion-2, B scan with Automatic Crawler 
+- Olympus 45MG, Ultrasonic Thickness Gauge
+- Measurement tools
+# Purpose of Scorpion-2 B-Scan with automatic crawler
+> The purpose of the inspection was to determine the integrity of the Tower Shell Plates as per API 653 and to monitor the general condition of the Final Absorption Tower (Tower No.402) of SAP-1 Unit against the general degradation due to the service conditions. The main advantage of this instrument is without any man entry, with the help of this instrument to find out the actual thickness of plates.
+# Concept of Scorpion-2 B-Scan Inspection
+> During an inspection it is recommended that the Scorpion-2, B-Scan Crawler is kept as clean as possible. After every inspection the scanner head must be thoroughly cleaned ensuring all dust and debris is removed especially around the critical components such as the wheel probe, both magnetic wheels and the encoder. The wheel probe / transducer can be removed for further cleaning.
+> The dry coupled rubber of the Wheel Probe is most effective when the contact surface is slightly tacky. As the Wheel Probe picks up dust and debris from the surface it becomes less effective. The cleaning pad removes any dust and debris from the Wheel probe and applies a thin film of oil to help improve coupling. A Silicone Oil, such as silicone brake fluid, should be manually applied to the cleaning pad to ensure that it remains moist.
+> Its unique dry-coupled ultrasonic wheel probe eliminates the need for Couplant or a constant water supply. The probe is designed as a twin crystal ultrasonic probe with a unique rolling probe face. The probe carriage allows the system to record thickness measurements within 25 mm (1 in) of a weld cap to inspect the critical heat affected zone (HAZ). The four independently-powered magnetic drive wheels with treaded tires give Scorpion2 the advantage of being able to easily drive over 12 mm (0.47 in) and provide grip under any conditions.
+% 1
+$ Ultrasonic Performance
+> Scorpion-2 is equipped with the best ultrasonic electronics and software the industry has to offer. With its advanced filtering, the system can inspect materials ranging from 5 to 100 mm (0.2 to 4 in) faster and more accurately. The software allows for unique UT gate processing, such as floating and tracking gates, ensuring correct wall thickness measurements under most circumstances.
+$ Scorpion Crawler
+> The battery-power crawler is designed to go where no man can go. Crawler handling is minimized with simple controls and long umbilical, when combined with a speed of up to 180 mm/sec (7 in/sec), allow the completions of inspections faster and more efficiently.
+% 2
+$ Scorpion-2, B-Scan-Swift
+> With a large 26.4 cm (10.4 in) non-reflective, touch screen display, Swift-UT provides clear views under any lighting conditions.
+> It has a powerful integrated ultrasonic card and seamlessly works with the dedicated B-SCAN software. Setting up ultrasonic and inspection details has never been this easy.
+> Swift-UT is sealed and designed for IP65. Its magnesium alloy casing is tough, and is water and dust resistant. Combined with a 3mm (1/8 in) strengthened glass, it's the perfect instrument for harsh environmental conditions.
+> Swift-UT comes with two lithium-ions, hot-swappable batteries, allowing for a full day's work. 
+% 3
+> Swift-UT has an optional harness to support the use of the system for longer period of time. The adjustable stand, the top handle, and four corner anchor points make it practical for on-site inspections.
+# Calibration standard
+- V2 - Block
+- Step Block: 6.25 to 25MM
+# Reference Documents
+> This Inspection report (observations / recommendations) are based on the following reference documents and the observations made during actual inspection and by evaluating the test results/Non-Destructive Tests
+- API 653, 5th Ed.2014
+- API 650 - 12th Edition - March 2013.

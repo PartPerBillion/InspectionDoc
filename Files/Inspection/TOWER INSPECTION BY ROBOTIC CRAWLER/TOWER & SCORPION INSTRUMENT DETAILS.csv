@@ -1,0 +1,10 @@
+﻿Report No,ATL/UT/CIL-ENNORE/NOV-2023/03,Inspection Date,20-Nov-23
+Procedure No,ATL/ANDT/SUT/05. Rev.0,Equipment Name,Final Absorption Tower
+Acceptance Criteria,API 653 / Client Specification,Equipment Tag No,Tower No.402
+Scanning Device,"Scorpion-2, B Scanner",Material Spec,Carbon Steel
+Transducer,Dry coupled wheel ,Surface Condition,Painted Surface
+Transducer Type,Dual / Twin Compressional,Calibration Ref.,Back wall echo set 80% FSH
+Transducer Frequency,5 MHz,Gain,1dB
+"Scorpion 2, B-Scan Equipment Detail",,,
+Manufacturer,Model,Serial No,Cable type/Length
+Eddy fi Technologies,"Scorpion2, B-Scan with Robotic Crawler",1733508,Umbilical Cable 30 m
