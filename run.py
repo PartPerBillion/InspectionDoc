@@ -608,6 +608,7 @@ def make_inspection_document(client_name, client_location, unit_number, client_c
 
     heading_number = add_heading_number(heading_number,1)
     doc.add_heading(f'{heading_number}. Detailed Report'.upper(),1).bold = True
+    doc.add_page_break()
     
     # if len(list(detailed_report.keys())[0])>0:
     #     if bool(list(detailed_report.values())[0])==True:
