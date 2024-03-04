@@ -60,7 +60,7 @@ if fpage_image is not None:
     c11.image(fpage_image,width=175)
 
 
-my_file = Path(rf'Files\Client\Logo\{client_name}.png')
+my_file = Path(rf'Files/Client/Logo/{client_name}.png')
 if client_logo is not None:
     c12.image(client_logo,width=175)
 elif my_file.is_file():
@@ -139,7 +139,7 @@ result =  st.button('Generate Report', use_container_width = True, type = 'prima
 
 if result == True:
     doc = make_inspection_document(client_name, client_location, unit_number, client_code, fpage_image, inspection_date, equipment_name, tag_number, inspection_type, edited_df, result_and_conclusion, site_observation, overall_summary, thickness_details, scanning_details, shellwise_inspection, tower_drawing, shell_plate_pics)
-    doc.save(rf'Files\Temp\{filename}')
-    set_updatefields_true(rf'Files\Temp\{filename}')
-    st.download_button("Download report" , data=open(rf'Files\Temp\{filename}', "rb").read(), file_name=filename, use_container_width = True, mime = "application/octet-stream" )
+    doc.save(rf'Files/Temp/{filename}')
+    set_updatefields_true(rf'Files/Temp/{filename}')
+    st.download_button("Download report" , data=open(rf'Files/Temp/{filename}', "rb").read(), file_name=filename, use_container_width = True, mime = "application/octet-stream" )
 
